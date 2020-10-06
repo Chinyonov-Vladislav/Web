@@ -1,0 +1,291 @@
+html {
+    background: url(images/sky.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.header
+{
+    min-width: 1100px;
+    display: inline-block;
+    height: 200px;
+    width: 80%;
+    background-color: burlywood;
+    border-bottom: 5px black solid;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.basket{
+    position: relative;
+    float: right;
+    margin-top: 40px;
+    margin-right: 10px;
+}
+.basket:hover{
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+.button1{
+    position: relative;
+    background-color: red;
+    border-color: deeppink;
+    float: right;
+    margin-top: 75px;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    margin-right: 5%;
+
+}
+input[type="search"] {
+    position: relative;
+    width: 310px; /* Ширина кнопки */
+    height: 50px; /* Высота кнопки */
+    vertical-align: middle; /* Выравнивание по середине */
+    border-left: black 3px solid;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    font-size: 15px;
+    margin-bottom: 200px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.poiks
+{
+    position: relative;
+    width: 50px;
+    height: 45px;
+    vertical-align: center;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
+    border-right: black 3px solid;
+    margin-bottom: 78px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    margin-left: 25%;
+    margin-right: 24%;
+    margin-top: 25px;
+
+}
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+.fig
+{
+    text-align: center; /* Выравнивание по центру */
+
+}
+.frame{
+    border: blue 5px solid;
+}
+.fig :hover
+{
+    transform: scale(1.5);
+    transition: 1s;
+}
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: grey;
+    color: black;
+    text-align: center;
+}
+TD {
+    vertical-align: top; /* Выравнивание по верхнему краю ячейки */
+}
+#col1 {
+    width: 10%; /* Ширина первой колонки */
+    background: transparent; /* Цвет фона первой колонки */
+    font-size: 20px;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+#col2 {
+    width: 10%; /* Ширина второй колонки */
+    background: transparent; /* Цвет фона второй колонки */
+    font-size: 20px;
+    text-align: center;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+#col3 {
+    width: 10%; /* Ширина третьей колонки */
+    background: transparent; /* Цвет фона третьей колонки */
+    font-size: 20px;
+    text-align: center;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+#col4 {
+    width: 10%; /* Ширина 4 колонки */
+    background: transparent; /* Цвет фона 4 колонки */
+    font-size: 20px;
+    text-align: center;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+}
+.borders{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.vk{
+    display: block;
+    margin: 0 auto;
+    background: url("images/vk.png");
+    height: 100px;
+    width: 100px;
+}
+.vk:hover
+{
+    display: block;
+    margin: 0 auto;
+    background: url("images/vk_after.png");
+    height: 100px;
+    width: 100px;
+}
+
+
+.ref:link {
+    color: black; /* Цвет ссылок */
+}
+.ref:visited {
+    color: black; /* Цвет посещенных ссылок */
+}
+.ref:active {
+    color: black; /* Цвет активных ссылок */
+}
+.ref:hover{
+    color:darkgoldenrod;
+}
+
+
+.services:hover{
+    filter: blur(2px);
+    width: 100%;
+    height: 100%;
+}
+.all_product_button{
+    position: relative;
+    left: 50%;
+    margin-bottom: 50px;
+    transform: translate(-50%, 0);
+    background-color: red;
+    border-color: deeppink;
+    width: 400px;
+    height: 50px;
+    font-size: 25px;
+}
+.all_product_button:hover{box-shadow: inset 1px 1px 10px -1px}
+.subscribe
+{
+    display: block;
+    background-color: skyblue;
+    min-width: 450px;
+
+    height: 250px;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-bottom: 20px;
+    margin-top: -100px;
+}
+.message{
+    position: relative;
+    margin: 0 auto;
+    background: url("images/message.png");
+    height: 98px;
+    width: 98px;
+}
+.message:hover
+{
+    position: relative;
+    margin: 0 auto;
+    background: url("images/messageAfter.png");
+    height: 98px;
+    width: 98px;
+}
+.button_subscibe{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: steelblue;
+    border-color: black;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
