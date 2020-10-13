@@ -1,0 +1,150 @@
+.scena{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: darkgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.button_block{
+    display: block;
+    /*justify-content: flex-end;
+    align-items: center;*/
+    width: 300px;
+    height: 100px;
+    background-color: skyblue;
+    border-radius: 50px;
+    border: blue 5px solid;
+    transition: 6s;
+}
+.button_block .sun{
+    width: 80px;
+    height: 80px;
+    background-color: yellow;
+    border: orangered 3px solid;
+    border-radius: 50%;
+    /*transition: 3s;*/
+    float: right;
+    margin-right: 5%;
+    margin-top: 2.5%;
+    z-index: 0;
+    transform: translate(0px);
+    transition: 6s;
+}
+/*.button_block .cloud{
+    background-color: white;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position: relative;
+}*/
+.cloud {
+    position: relative;
+    width: 2em;
+    height: 2em;
+    margin: 2em;
+    background: #D5DEE9;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: #6E839E;
+    border-radius: 50% 50% 0 0;
+    opacity: 1;
+    transition: 6s;
+}
+.cloud:before,
+.cloud:after {
+    content: "";
+    position: absolute;
+    bottom: -0.25em;
+    background: inherit;
+    border-width: 0.25em;
+    border-style: solid;
+    border-color: #6E839E;
+}
+.cloud:before {
+    left: 80%;
+    width: 60%;
+    height: 60%;
+    border-left: none;
+    border-radius: 50% 50% 50% 0;
+}
+.cloud:after {
+    right: 80%;
+    width: 80%;
+    height: 80%;
+    border-right: none;
+    border-radius: 50% 50% 0;
+}
+.star{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0;
+    z-index: 1;
+    transition: 3s;
+}
+.button_block .crater{
+    width: 15px;
+    height: 15px;
+    border-radius:50%;
+    border: 2px black solid;
+    background-color: slategrey;
+    opacity: 0;
+    z-index: 1;
+    transition: 3s;
+}
+
+.button_block:hover{
+    transition: 6s;
+    background-color: #464646;
+    border:black 5px solid;
+}
+.button_block:hover .sun{
+    transition: 6s;
+    transform: translate(-180px);
+    background-color:  #fffcf1;
+    border: black 3px solid;
+
+}
+.button_block:hover .cloud{
+    transition: 3s;
+    opacity: 0;
+}
+.button_block:hover .star{
+    transition: 10s;
+    opacity: 1;
+}
+.button_block:hover .crater
+{
+    transition: 10s;
+    opacity: 1;
+}
+
+.button_block:active{
+    transition: 6s;
+    background-color: skyblue;
+    border:blue 5px solid;
+}
+.button_block:active .sun{
+    transition: 6s;
+    transform: translate(0px);
+    background-color:  yellow;
+    border: orangered 3px solid;
+}
+.button_block:active .cloud{
+    transition: 6s;
+    opacity: 1;
+}
+.button_block:active .star{
+    transition: 4s;
+    opacity: 0;
+}
+.button_block:active .crater
+{
+    transition: 1s;
+    opacity: 0;
+}
+

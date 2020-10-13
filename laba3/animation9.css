@@ -1,0 +1,647 @@
+.scena{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.circle{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: spin 219s linear 0s infinite;
+}
+.triangle-up1{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    margin-top: 25%;
+    animation: colorChange1 219s linear 0s infinite;
+}
+.triangle-up2{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    margin-top: 25%;
+    animation: colorChange2 219s linear 0s infinite;
+}
+.triangle-up3{
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid blue;
+    margin-top: 25%;
+    animation: colorChange3 219s linear 0s infinite;
+}
+@keyframes spin {
+    from{transform: rotate(0deg)}
+    to{transform: rotate(9000deg)}
+    0%{transform: rotate(0deg)}
+    0.46%{transform: rotate(0deg)}
+    1.38%{transform: rotate(125deg)}
+    1.84%{transform: rotate(125deg)}
+    2.76%{transform: rotate(250deg)}
+    3.22%{transform: rotate(250deg)}
+    4.14%{transform: rotate(375deg)}
+    4.6%{transform: rotate(375deg)}
+    5.52%{transform: rotate(500deg)}
+    5.98%{transform: rotate(500deg)}
+    6.9%{transform: rotate(625deg)}
+    7.36%{transform: rotate(625deg)}
+    8.28%{transform: rotate(750deg)}
+    8.74%{transform: rotate(750deg)}
+    9.66%{transform: rotate(875deg)}
+    10.12%{transform: rotate(875deg)}
+    11.04%{transform: rotate(1000deg)}
+    11.5%{transform: rotate(1000deg)}
+    12.42%{transform: rotate(1125deg)}
+    12.88%{transform: rotate(1125deg)}
+    13.8%{transform: rotate(1250deg)}
+    14.26%{transform: rotate(1250deg)}
+    15.18%{transform: rotate(1375deg)}
+    15.64%{transform: rotate(1375deg)}
+    16.56%{transform: rotate(1500deg)}
+    17.02%{transform: rotate(1500deg)}
+    17.94%{transform: rotate(1625deg)}
+    18.4%{transform: rotate(1625deg)}
+    19.32%{transform: rotate(1750deg)}
+    19.78%{transform: rotate(1750deg)}
+    20.7%{transform: rotate(1875deg)}
+    21.16%{transform: rotate(1875deg)}
+    22.08%{transform: rotate(2000deg)}
+    22.54%{transform: rotate(2000deg)}
+    23.46%{transform: rotate(2125deg)}
+    23.92%{transform: rotate(2125deg)}
+    24.84%{transform: rotate(2250deg)}
+    25.3%{transform: rotate(2250deg)}
+    26.22%{transform: rotate(2375deg)}
+    26.68%{transform: rotate(2375deg)}
+    27.6%{transform: rotate(2500deg)}
+    28.06%{transform: rotate(2500deg)}
+    28.98%{transform: rotate(2625deg)}
+    29.44%{transform: rotate(2625deg)}
+    30.36%{transform: rotate(2750deg)}
+    30.82%{transform: rotate(2750deg)}
+    31.74%{transform: rotate(2875deg)}
+    32.2%{transform: rotate(2875deg)}
+    33.12%{transform: rotate(3000deg)}
+    33.58%{transform: rotate(3000deg)}
+    34.5%{transform: rotate(3125deg)}
+    34.96%{transform: rotate(3125deg)}
+    35.88%{transform: rotate(3250deg)}
+    36.34%{transform: rotate(3250deg)}
+    37.26%{transform: rotate(3375deg)}
+    37.72%{transform: rotate(3375deg)}
+    38.64%{transform: rotate(3500deg)}
+    39.1%{transform: rotate(3500deg)}
+    40.02%{transform: rotate(3625deg)}
+    40.48%{transform: rotate(3625deg)}
+    41.4%{transform: rotate(3750deg)}
+    41.86%{transform: rotate(3750deg)}
+    42.78%{transform: rotate(3875deg)}
+    43.24%{transform: rotate(3875deg)}
+    44.16%{transform: rotate(4000deg)}
+    44.62%{transform: rotate(4000deg)}
+    45.54%{transform: rotate(4125deg)}
+    46%{transform: rotate(4125deg)}
+    46.92%{transform: rotate(4250deg)}
+    47.38%{transform: rotate(4250deg)}
+    48.3%{transform: rotate(4375deg)}
+    48.76%{transform: rotate(4375deg)}
+    49.68%{transform: rotate(4500deg)}
+    50.14%{transform: rotate(4500deg)}
+    51.06%{transform: rotate(4625deg)}
+    51.52%{transform: rotate(4625deg)}
+    52.44%{transform: rotate(4750deg)}
+    52.9%{transform: rotate(4750deg)}
+    53.82%{transform: rotate(4875deg)}
+    54.28%{transform: rotate(4875deg)}
+    55.2%{transform: rotate(5000deg)}
+    55.66%{transform: rotate(5000deg)}
+    56.58%{transform: rotate(5125deg)}
+    57.04%{transform: rotate(5125deg)}
+    57.96%{transform: rotate(5250deg)}
+    58.42%{transform: rotate(5250deg)}
+    59.34%{transform: rotate(5375deg)}
+    59.8%{transform: rotate(5375deg)}
+    60.72%{transform: rotate(5500deg)}
+    61.18%{transform: rotate(5500deg)}
+    62.1%{transform: rotate(5625deg)}
+    62.56%{transform: rotate(5625deg)}
+    63.48%{transform: rotate(5750deg)}
+    63.94%{transform: rotate(5750deg)}
+    64.86%{transform: rotate(5875deg)}
+    65.32%{transform: rotate(5875deg)}
+    66.24%{transform: rotate(6000deg)}
+    66.7%{transform: rotate(6000deg)}
+    67.62%{transform: rotate(6125deg)}
+    68.08%{transform: rotate(6125deg)}
+    69%{transform: rotate(6250deg)}
+    69.46%{transform: rotate(6250deg)}
+    70.38%{transform: rotate(6375deg)}
+    70.84%{transform: rotate(6375deg)}
+    71.76%{transform: rotate(6500deg)}
+    72.22%{transform: rotate(6500deg)}
+    73.14%{transform: rotate(6625deg)}
+    73.6%{transform: rotate(6625deg)}
+    74.52%{transform: rotate(6750deg)}
+    74.98%{transform: rotate(6750deg)}
+    75.9%{transform: rotate(6875deg)}
+    76.36%{transform: rotate(6875deg)}
+    77.28%{transform: rotate(7000deg)}
+    77.74%{transform: rotate(7000deg)}
+    78.66%{transform: rotate(7125deg)}
+    79.12%{transform: rotate(7125deg)}
+    80.04%{transform: rotate(7250deg)}
+    80.5%{transform: rotate(7250deg)}
+    81.42%{transform: rotate(7375deg)}
+    81.88%{transform: rotate(7375deg)}
+    82.8%{transform: rotate(7500deg)}
+    83.26%{transform: rotate(7500deg)}
+    84.18%{transform: rotate(7625deg)}
+    84.64%{transform: rotate(7625deg)}
+    85.56%{transform: rotate(7750deg)}
+    86.02%{transform: rotate(7750deg)}
+    86.94%{transform: rotate(7875deg)}
+    87.4%{transform: rotate(7875deg)}
+    88.32%{transform: rotate(8000deg)}
+    88.78%{transform: rotate(8000deg)}
+    89.7%{transform: rotate(8125deg)}
+    90.16%{transform: rotate(8125deg)}
+    91.08%{transform: rotate(8250deg)}
+    91.54%{transform: rotate(8250deg)}
+    92.46%{transform: rotate(8375deg)}
+    92.92%{transform: rotate(8375deg)}
+    93.84%{transform: rotate(8500deg)}
+    94.3%{transform: rotate(8500deg)}
+    95.22%{transform: rotate(8625deg)}
+    95.68%{transform: rotate(8625deg)}
+    96.6%{transform: rotate(8750deg)}
+    97.06%{transform: rotate(8750deg)}
+    97.98%{transform: rotate(8875deg)}
+    98.44%{transform: rotate(8875deg)}
+    99.36%{transform: rotate(9000deg)}
+    100%{transform: rotate(9000deg)}
+
+}
+@keyframes colorChange1 {
+    0%{border-bottom: 100px solid blue}
+    0.46%{border-bottom: 100px solid white}
+    1.38%{border-bottom: 100px solid white}
+    1.84%{border-bottom: 100px solid white}
+    2.76%{border-bottom: 100px solid white}
+    3.22%{border-bottom: 100px solid white}
+    4.14%{border-bottom: 100px solid white}
+    4.6%{border-bottom: 100px solid blue}
+    5.52%{border-bottom: 100px solid blue}
+    5.98%{border-bottom: 100px solid blue}
+    6.9%{border-bottom: 100px solid blue}
+    7.36%{border-bottom: 100px solid blue}
+    8.28%{border-bottom: 100px solid blue}
+    8.74%{border-bottom: 100px solid white}
+    9.66%{border-bottom: 100px solid white}
+    10.12%{border-bottom: 100px solid white}
+    11.04%{border-bottom: 100px solid white}
+    11.5%{border-bottom: 100px solid white}
+    12.42%{border-bottom: 100px solid white}
+    12.88%{border-bottom: 100px solid blue}
+    13.8%{border-bottom: 100px solid blue}
+    14.26%{border-bottom: 100px solid blue}
+    15.18%{border-bottom: 100px solid blue}
+    15.64%{border-bottom: 100px solid blue}
+    16.56%{border-bottom: 100px solid blue}
+    17.02%{border-bottom: 100px solid white}
+    17.94%{border-bottom: 100px solid white}
+    18.4%{border-bottom: 100px solid white}
+    19.32%{border-bottom: 100px solid white}
+    19.78%{border-bottom: 100px solid white}
+    20.7%{border-bottom: 100px solid white}
+    21.16%{border-bottom: 100px solid blue}
+    22.08%{border-bottom: 100px solid blue}
+    22.54%{border-bottom: 100px solid blue}
+    23.46%{border-bottom: 100px solid blue}
+    23.92%{border-bottom: 100px solid blue}
+    24.84%{border-bottom: 100px solid blue}
+    25.3%{border-bottom: 100px solid white}
+    26.22%{border-bottom: 100px solid white}
+    26.68%{border-bottom: 100px solid white}
+    27.6%{border-bottom: 100px solid white}
+    28.06%{border-bottom: 100px solid white}
+    28.98%{border-bottom: 100px solid white}
+    29.44%{border-bottom: 100px solid blue}
+    30.36%{border-bottom: 100px solid blue}
+    30.82%{border-bottom: 100px solid blue}
+    31.74%{border-bottom: 100px solid blue}
+    32.2%{border-bottom: 100px solid blue}
+    33.12%{border-bottom: 100px solid blue}
+    33.58%{border-bottom: 100px solid white}
+    34.5%{border-bottom: 100px solid white}
+    34.96%{border-bottom: 100px solid white}
+    35.88%{border-bottom: 100px solid white}
+    36.34%{border-bottom: 100px solid white}
+    37.26%{border-bottom: 100px solid white}
+    37.72%{border-bottom: 100px solid blue}
+    38.64%{border-bottom: 100px solid blue}
+    39.1%{border-bottom: 100px solid blue}
+    40.02%{border-bottom: 100px solid blue}
+    40.48%{border-bottom: 100px solid blue}
+    41.4%{border-bottom: 100px solid blue}
+    41.86%{border-bottom: 100px solid white}
+    42.78%{border-bottom: 100px solid white}
+    43.24%{border-bottom: 100px solid white}
+    44.16%{border-bottom: 100px solid white}
+    44.62%{border-bottom: 100px solid white}
+    45.54%{border-bottom: 100px solid white}
+    46%{border-bottom: 100px solid blue}
+    46.92%{border-bottom: 100px solid blue}
+    47.38%{border-bottom: 100px solid blue}
+    48.3%{border-bottom: 100px solid blue}
+    48.76%{border-bottom: 100px solid blue}
+    49.68%{border-bottom: 100px solid blue}
+    50.14%{border-bottom: 100px solid white}
+    51.06%{border-bottom: 100px solid white}
+    51.52%{border-bottom: 100px solid white}
+    52.44%{border-bottom: 100px solid white}
+    52.9%{border-bottom: 100px solid white}
+    53.82%{border-bottom: 100px solid white}
+    54.28%{border-bottom: 100px solid blue}
+    55.2%{border-bottom: 100px solid blue}
+    55.66%{border-bottom: 100px solid blue}
+    56.58%{border-bottom: 100px solid blue}
+    57.04%{border-bottom: 100px solid blue}
+    57.96%{border-bottom: 100px solid blue}
+    58.42%{border-bottom: 100px solid white}
+    59.34%{border-bottom: 100px solid white}
+    59.8%{border-bottom: 100px solid white}
+    60.72%{border-bottom: 100px solid white}
+    61.18%{border-bottom: 100px solid white}
+    62.1%{border-bottom: 100px solid white}
+    62.56%{border-bottom: 100px solid blue}
+    63.48%{border-bottom: 100px solid blue}
+    63.94%{border-bottom: 100px solid blue}
+    64.86%{border-bottom: 100px solid blue}
+    65.32%{border-bottom: 100px solid blue}
+    66.24%{border-bottom: 100px solid blue}
+    66.7%{border-bottom: 100px solid white}
+    67.62%{border-bottom: 100px solid white}
+    68.08%{border-bottom: 100px solid white}
+    69%{border-bottom: 100px solid white}
+    69.46%{border-bottom: 100px solid white}
+    70.38%{border-bottom: 100px solid white}
+    70.84%{border-bottom: 100px solid blue}
+    71.76%{border-bottom: 100px solid blue}
+    72.22%{border-bottom: 100px solid blue}
+    73.14%{border-bottom: 100px solid blue}
+    73.6%{border-bottom: 100px solid blue}
+    74.52%{border-bottom: 100px solid blue}
+    74.98%{border-bottom: 100px solid white}
+    75.9%{border-bottom: 100px solid white}
+    76.36%{border-bottom: 100px solid white}
+    77.28%{border-bottom: 100px solid white}
+    77.74%{border-bottom: 100px solid white}
+    78.66%{border-bottom: 100px solid white}
+    79.12%{border-bottom: 100px solid blue}
+    80.04%{border-bottom: 100px solid blue}
+    80.5%{border-bottom: 100px solid blue}
+    81.42%{border-bottom: 100px solid blue}
+    81.88%{border-bottom: 100px solid blue}
+    82.8%{border-bottom: 100px solid blue}
+    83.26%{border-bottom: 100px solid white}
+    84.18%{border-bottom: 100px solid white}
+    84.64%{border-bottom: 100px solid white}
+    85.56%{border-bottom: 100px solid white}
+    86.02%{border-bottom: 100px solid white}
+    86.94%{border-bottom: 100px solid white}
+    87.4%{border-bottom: 100px solid blue}
+    88.32%{border-bottom: 100px solid blue}
+    88.78%{border-bottom: 100px solid blue}
+    89.7%{border-bottom: 100px solid blue}
+    90.16%{border-bottom: 100px solid blue}
+    91.08%{border-bottom: 100px solid blue}
+    91.54%{border-bottom: 100px solid white}
+    92.46%{border-bottom: 100px solid white}
+    92.92%{border-bottom: 100px solid white}
+    93.84%{border-bottom: 100px solid white}
+    94.3%{border-bottom: 100px solid white}
+    95.22%{border-bottom: 100px solid white}
+    95.68%{border-bottom: 100px solid blue}
+    96.6%{border-bottom: 100px solid blue}
+    97.06%{border-bottom: 100px solid blue}
+    97.98%{border-bottom: 100px solid blue}
+    98.44%{border-bottom: 100px solid blue}
+    99.36%{border-bottom: 100px solid blue}
+    100%{border-bottom: 100px solid white}
+
+
+}
+@keyframes colorChange2 {
+    0%{border-bottom: 100px solid blue}
+    0.46%{border-bottom: 100px solid blue}
+    1.38%{border-bottom: 100px solid blue}
+    1.84%{border-bottom: 100px solid white}
+    2.76%{border-bottom: 100px solid white}
+    3.22%{border-bottom: 100px solid white}
+    4.14%{border-bottom: 100px solid white}
+    4.6%{border-bottom: 100px solid white}
+    5.52%{border-bottom: 100px solid white}
+    5.98%{border-bottom: 100px solid blue}
+    6.9%{border-bottom: 100px solid blue}
+    7.36%{border-bottom: 100px solid blue}
+    8.28%{border-bottom: 100px solid blue}
+    8.74%{border-bottom: 100px solid blue}
+    9.66%{border-bottom: 100px solid blue}
+    10.12%{border-bottom: 100px solid white}
+    11.04%{border-bottom: 100px solid white}
+    11.5%{border-bottom: 100px solid white}
+    12.42%{border-bottom: 100px solid white}
+    12.88%{border-bottom: 100px solid white}
+    13.8%{border-bottom: 100px solid white}
+    14.26%{border-bottom: 100px solid blue}
+    15.18%{border-bottom: 100px solid blue}
+    15.64%{border-bottom: 100px solid blue}
+    16.56%{border-bottom: 100px solid blue}
+    17.02%{border-bottom: 100px solid blue}
+    17.94%{border-bottom: 100px solid blue}
+    18.4%{border-bottom: 100px solid white}
+    19.32%{border-bottom: 100px solid white}
+    19.78%{border-bottom: 100px solid white}
+    20.7%{border-bottom: 100px solid white}
+    21.16%{border-bottom: 100px solid white}
+    22.08%{border-bottom: 100px solid white}
+    22.54%{border-bottom: 100px solid blue}
+    23.46%{border-bottom: 100px solid blue}
+    23.92%{border-bottom: 100px solid blue}
+    24.84%{border-bottom: 100px solid blue}
+    25.3%{border-bottom: 100px solid blue}
+    26.22%{border-bottom: 100px solid blue}
+    26.68%{border-bottom: 100px solid white}
+    27.6%{border-bottom: 100px solid white}
+    28.06%{border-bottom: 100px solid white}
+    28.98%{border-bottom: 100px solid white}
+    29.44%{border-bottom: 100px solid white}
+    30.36%{border-bottom: 100px solid white}
+    30.82%{border-bottom: 100px solid blue}
+    31.74%{border-bottom: 100px solid blue}
+    32.2%{border-bottom: 100px solid blue}
+    33.12%{border-bottom: 100px solid blue}
+    33.58%{border-bottom: 100px solid blue}
+    34.5%{border-bottom: 100px solid blue}
+    34.96%{border-bottom: 100px solid white}
+    35.88%{border-bottom: 100px solid white}
+    36.34%{border-bottom: 100px solid white}
+    37.26%{border-bottom: 100px solid white}
+    37.72%{border-bottom: 100px solid white}
+    38.64%{border-bottom: 100px solid white}
+    39.1%{border-bottom: 100px solid blue}
+    40.02%{border-bottom: 100px solid blue}
+    40.48%{border-bottom: 100px solid blue}
+    41.4%{border-bottom: 100px solid blue}
+    41.86%{border-bottom: 100px solid blue}
+    42.78%{border-bottom: 100px solid blue}
+    43.24%{border-bottom: 100px solid white}
+    44.16%{border-bottom: 100px solid white}
+    44.62%{border-bottom: 100px solid white}
+    45.54%{border-bottom: 100px solid white}
+    46%{border-bottom: 100px solid white}
+    46.92%{border-bottom: 100px solid white}
+    47.38%{border-bottom: 100px solid blue}
+    48.3%{border-bottom: 100px solid blue}
+    48.76%{border-bottom: 100px solid blue}
+    49.68%{border-bottom: 100px solid blue}
+    50.14%{border-bottom: 100px solid blue}
+    51.06%{border-bottom: 100px solid blue}
+    51.52%{border-bottom: 100px solid white}
+    52.44%{border-bottom: 100px solid white}
+    52.9%{border-bottom: 100px solid white}
+    53.82%{border-bottom: 100px solid white}
+    54.28%{border-bottom: 100px solid white}
+    55.2%{border-bottom: 100px solid white}
+    55.66%{border-bottom: 100px solid blue}
+    56.58%{border-bottom: 100px solid blue}
+    57.04%{border-bottom: 100px solid blue}
+    57.96%{border-bottom: 100px solid blue}
+    58.42%{border-bottom: 100px solid blue}
+    59.34%{border-bottom: 100px solid blue}
+    59.8%{border-bottom: 100px solid white}
+    60.72%{border-bottom: 100px solid white}
+    61.18%{border-bottom: 100px solid white}
+    62.1%{border-bottom: 100px solid white}
+    62.56%{border-bottom: 100px solid white}
+    63.48%{border-bottom: 100px solid white}
+    63.94%{border-bottom: 100px solid blue}
+    64.86%{border-bottom: 100px solid blue}
+    65.32%{border-bottom: 100px solid blue}
+    66.24%{border-bottom: 100px solid blue}
+    66.7%{border-bottom: 100px solid blue}
+    67.62%{border-bottom: 100px solid blue}
+    68.08%{border-bottom: 100px solid white}
+    69%{border-bottom: 100px solid white}
+    69.46%{border-bottom: 100px solid white}
+    70.38%{border-bottom: 100px solid white}
+    70.84%{border-bottom: 100px solid white}
+    71.76%{border-bottom: 100px solid white}
+    72.22%{border-bottom: 100px solid blue}
+    73.14%{border-bottom: 100px solid blue}
+    73.6%{border-bottom: 100px solid blue}
+    74.52%{border-bottom: 100px solid blue}
+    74.98%{border-bottom: 100px solid blue}
+    75.9%{border-bottom: 100px solid blue}
+    76.36%{border-bottom: 100px solid white}
+    77.28%{border-bottom: 100px solid white}
+    77.74%{border-bottom: 100px solid white}
+    78.66%{border-bottom: 100px solid white}
+    79.12%{border-bottom: 100px solid white}
+    80.04%{border-bottom: 100px solid white}
+    80.5%{border-bottom: 100px solid blue}
+    81.42%{border-bottom: 100px solid blue}
+    81.88%{border-bottom: 100px solid blue}
+    82.8%{border-bottom: 100px solid blue}
+    83.26%{border-bottom: 100px solid blue}
+    84.18%{border-bottom: 100px solid blue}
+    84.64%{border-bottom: 100px solid white}
+    85.56%{border-bottom: 100px solid white}
+    86.02%{border-bottom: 100px solid white}
+    86.94%{border-bottom: 100px solid white}
+    87.4%{border-bottom: 100px solid white}
+    88.32%{border-bottom: 100px solid white}
+    88.78%{border-bottom: 100px solid blue}
+    89.7%{border-bottom: 100px solid blue}
+    90.16%{border-bottom: 100px solid blue}
+    91.08%{border-bottom: 100px solid blue}
+    91.54%{border-bottom: 100px solid blue}
+    92.46%{border-bottom: 100px solid blue}
+    92.92%{border-bottom: 100px solid white}
+    93.84%{border-bottom: 100px solid white}
+    94.3%{border-bottom: 100px solid white}
+    95.22%{border-bottom: 100px solid white}
+    95.68%{border-bottom: 100px solid white}
+    96.6%{border-bottom: 100px solid white}
+    97.06%{border-bottom: 100px solid blue}
+    97.98%{border-bottom: 100px solid blue}
+    98.44%{border-bottom: 100px solid blue}
+    99.36%{border-bottom: 100px solid blue}
+    100%{border-bottom: 100px solid blue}
+
+
+}
+@keyframes colorChange3
+{
+    0%{border-bottom: 100px solid blue}
+    0.46%{border-bottom: 100px solid blue}
+    1.38%{border-bottom: 100px solid blue}
+    1.84%{border-bottom: 100px solid blue}
+    2.76%{border-bottom: 100px solid blue}
+    3.22%{border-bottom: 100px solid white}
+    4.14%{border-bottom: 100px solid white}
+    4.6%{border-bottom: 100px solid white}
+    5.52%{border-bottom: 100px solid white}
+    5.98%{border-bottom: 100px solid white}
+    6.9%{border-bottom: 100px solid white}
+    7.36%{border-bottom: 100px solid blue}
+    8.28%{border-bottom: 100px solid blue}
+    8.74%{border-bottom: 100px solid blue}
+    9.66%{border-bottom: 100px solid blue}
+    10.12%{border-bottom: 100px solid blue}
+    11.04%{border-bottom: 100px solid blue}
+    11.5%{border-bottom: 100px solid white}
+    12.42%{border-bottom: 100px solid white}
+    12.88%{border-bottom: 100px solid white}
+    13.8%{border-bottom: 100px solid white}
+    14.26%{border-bottom: 100px solid white}
+    15.18%{border-bottom: 100px solid white}
+    15.64%{border-bottom: 100px solid blue}
+    16.56%{border-bottom: 100px solid blue}
+    17.02%{border-bottom: 100px solid blue}
+    17.94%{border-bottom: 100px solid blue}
+    18.4%{border-bottom: 100px solid blue}
+    19.32%{border-bottom: 100px solid blue}
+    19.78%{border-bottom: 100px solid white}
+    20.7%{border-bottom: 100px solid white}
+    21.16%{border-bottom: 100px solid white}
+    22.08%{border-bottom: 100px solid white}
+    22.54%{border-bottom: 100px solid white}
+    23.46%{border-bottom: 100px solid white}
+    23.92%{border-bottom: 100px solid blue}
+    24.84%{border-bottom: 100px solid blue}
+    25.3%{border-bottom: 100px solid blue}
+    26.22%{border-bottom: 100px solid blue}
+    26.68%{border-bottom: 100px solid blue}
+    27.6%{border-bottom: 100px solid blue}
+    28.06%{border-bottom: 100px solid white}
+    28.98%{border-bottom: 100px solid white}
+    29.44%{border-bottom: 100px solid white}
+    30.36%{border-bottom: 100px solid white}
+    30.82%{border-bottom: 100px solid white}
+    31.74%{border-bottom: 100px solid white}
+    32.2%{border-bottom: 100px solid blue}
+    33.12%{border-bottom: 100px solid blue}
+    33.58%{border-bottom: 100px solid blue}
+    34.5%{border-bottom: 100px solid blue}
+    34.96%{border-bottom: 100px solid blue}
+    35.88%{border-bottom: 100px solid blue}
+    36.34%{border-bottom: 100px solid white}
+    37.26%{border-bottom: 100px solid white}
+    37.72%{border-bottom: 100px solid white}
+    38.64%{border-bottom: 100px solid white}
+    39.1%{border-bottom: 100px solid white}
+    40.02%{border-bottom: 100px solid white}
+    40.48%{border-bottom: 100px solid blue}
+    41.4%{border-bottom: 100px solid blue}
+    41.86%{border-bottom: 100px solid blue}
+    42.78%{border-bottom: 100px solid blue}
+    43.24%{border-bottom: 100px solid blue}
+    44.16%{border-bottom: 100px solid blue}
+    44.62%{border-bottom: 100px solid white}
+    45.54%{border-bottom: 100px solid white}
+    46%{border-bottom: 100px solid white}
+    46.92%{border-bottom: 100px solid white}
+    47.38%{border-bottom: 100px solid white}
+    48.3%{border-bottom: 100px solid white}
+    48.76%{border-bottom: 100px solid blue}
+    49.68%{border-bottom: 100px solid blue}
+    50.14%{border-bottom: 100px solid blue}
+    51.06%{border-bottom: 100px solid blue}
+    51.52%{border-bottom: 100px solid blue}
+    52.44%{border-bottom: 100px solid blue}
+    52.9%{border-bottom: 100px solid white}
+    53.82%{border-bottom: 100px solid white}
+    54.28%{border-bottom: 100px solid white}
+    55.2%{border-bottom: 100px solid white}
+    55.66%{border-bottom: 100px solid white}
+    56.58%{border-bottom: 100px solid white}
+    57.04%{border-bottom: 100px solid blue}
+    57.96%{border-bottom: 100px solid blue}
+    58.42%{border-bottom: 100px solid blue}
+    59.34%{border-bottom: 100px solid blue}
+    59.8%{border-bottom: 100px solid blue}
+    60.72%{border-bottom: 100px solid blue}
+    61.18%{border-bottom: 100px solid white}
+    62.1%{border-bottom: 100px solid white}
+    62.56%{border-bottom: 100px solid white}
+    63.48%{border-bottom: 100px solid white}
+    63.94%{border-bottom: 100px solid white}
+    64.86%{border-bottom: 100px solid white}
+    65.32%{border-bottom: 100px solid blue}
+    66.24%{border-bottom: 100px solid blue}
+    66.7%{border-bottom: 100px solid blue}
+    67.62%{border-bottom: 100px solid blue}
+    68.08%{border-bottom: 100px solid blue}
+    69%{border-bottom: 100px solid blue}
+    69.46%{border-bottom: 100px solid white}
+    70.38%{border-bottom: 100px solid white}
+    70.84%{border-bottom: 100px solid white}
+    71.76%{border-bottom: 100px solid white}
+    72.22%{border-bottom: 100px solid white}
+    73.14%{border-bottom: 100px solid white}
+    73.6%{border-bottom: 100px solid blue}
+    74.52%{border-bottom: 100px solid blue}
+    74.98%{border-bottom: 100px solid blue}
+    75.9%{border-bottom: 100px solid blue}
+    76.36%{border-bottom: 100px solid blue}
+    77.28%{border-bottom: 100px solid blue}
+    77.74%{border-bottom: 100px solid white}
+    78.66%{border-bottom: 100px solid white}
+    79.12%{border-bottom: 100px solid white}
+    80.04%{border-bottom: 100px solid white}
+    80.5%{border-bottom: 100px solid white}
+    81.42%{border-bottom: 100px solid white}
+    81.88%{border-bottom: 100px solid blue}
+    82.8%{border-bottom: 100px solid blue}
+    83.26%{border-bottom: 100px solid blue}
+    84.18%{border-bottom: 100px solid blue}
+    84.64%{border-bottom: 100px solid blue}
+    85.56%{border-bottom: 100px solid blue}
+    86.02%{border-bottom: 100px solid white}
+    86.94%{border-bottom: 100px solid white}
+    87.4%{border-bottom: 100px solid white}
+    88.32%{border-bottom: 100px solid white}
+    88.78%{border-bottom: 100px solid white}
+    89.7%{border-bottom: 100px solid white}
+    90.16%{border-bottom: 100px solid blue}
+    91.08%{border-bottom: 100px solid blue}
+    91.54%{border-bottom: 100px solid blue}
+    92.46%{border-bottom: 100px solid blue}
+    92.92%{border-bottom: 100px solid blue}
+    93.84%{border-bottom: 100px solid blue}
+    94.3%{border-bottom: 100px solid white}
+    95.22%{border-bottom: 100px solid white}
+    95.68%{border-bottom: 100px solid white}
+    96.6%{border-bottom: 100px solid white}
+    97.06%{border-bottom: 100px solid white}
+    97.98%{border-bottom: 100px solid white}
+    98.44%{border-bottom: 100px solid blue}
+    99.36%{border-bottom: 100px solid blue}
+    100%{border-bottom: 100px solid blue}
+}
+

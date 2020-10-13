@@ -1,0 +1,56 @@
+* { padding: 0; margin: 0; }
+.scena{
+    margin: 0 auto;
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:600px;
+    height:600px;
+    min-width: 600px;
+    min-height: 600px;
+    background: url("clock.png");
+    background-color: grey;
+    border-radius: 50%;
+}
+
+.scena .clock #sec {
+    position: absolute;
+    height: 300px;
+    width: 1px;
+    background-color: red;
+    transform-origin: 50% 100%;
+    animation: tik 60s steps(60) infinite;
+    z-index: 2;
+    bottom: 50%;
+}
+.scena .clock  #min{
+    position: absolute;
+    height: 250px;
+    width: 3px;
+    background-color: green;
+    transform-origin: 50% 100%;
+    animation: tik 3600s steps(60) infinite;
+    z-index: 0;
+    bottom: 50%;
+}
+.scena .clock #hour{
+    position: absolute;
+    height: 200px;
+    width: 3px;
+    background-color: blue;
+    transform-origin: 50% 100%;
+    animation: tik  43200s steps(360) infinite;
+    z-index: 1;
+    bottom: 50%;
+}
+@keyframes tik {
+100% {
+    transform: rotate(360deg); } }
