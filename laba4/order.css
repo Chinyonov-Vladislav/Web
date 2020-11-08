@@ -1,0 +1,560 @@
+html {
+    background: url(images/sky.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+/*header*/
+.header{
+    width: 80%;
+    margin: 0 auto;
+    background: burlywood;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+    border-bottom: 3px solid black;
+    padding: 0;
+    padding-right: 3%;
+}
+.logo> img{
+    width: 90%;
+}
+.search{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+input[type="search"]
+{
+    width:80%;
+    height: 50px;
+    vertical-align: middle; /* Выравнивание по середине */
+    border-left: black 3px solid;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
+    -webkit-appearance: none; /* Убираем рамку в Chrome и Safari */
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: 0;
+}
+.button_poiks
+{
+    width: 7%;
+    height: 45px;
+    vertical-align: middle;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
+    border-right: black 3px solid;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    margin: 0;
+}
+.button_My_Account{
+    width: 25%;
+    height: 50px;
+    background-color: transparent;
+    font-size: 15px;
+    border: 3px solid black;
+}
+.button_My_Account:hover{
+    background-color: red;
+}
+.button_basket{
+    margin-right: 30px;
+}
+.button_basket:hover{
+    /*width: 100%;*/
+    -webkit-animation-name: rotation;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-name: rotation;
+    -moz-animation-duration: 5s;
+    -moz-animation-iteration-count: infinite;
+    -moz-animation-timing-function: linear;
+    -o-animation-name: rotation;
+    -o-animation-duration: 5s;
+    -o-animation-iteration-count: infinite;
+    -o-animation-timing-function: linear;
+    animation-name: rotation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+@-webkit-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-moz-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@-o-keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(360deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+@keyframes rotation {
+    0% {-webkit-transform:rotate(0deg);
+        -moz-transform:rotate(0deg);
+        -o-transform:rotate(0deg);
+        transform:rotate(0deg);}
+    100% {-webkit-transform:rotate(360deg);
+        -moz-transform:rotate(720deg);
+        -o-transform:rotate(360deg);
+        transform:rotate(360deg);}
+}
+/*nav-menu*/
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-menu{
+    width: 60%;
+    margin: 0 auto;
+    background: transparent;
+    margin-top: 1%;
+    display: flex;
+    flex-direction: row; /*менять в медиа*/
+    justify-content: space-around;
+    font-size: 25px;
+    text-decoration: none;
+    padding: 0;
+}
+.nav-menu > a{
+    border: 3px solid red;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
+.nav-menu >a:hover{
+    background-color: yellow;
+}
+.nav-menu > a:visited{
+    color: black;
+}
+.nav-menu> a:active{
+    color: black;
+}
+/*nav-menu*/
+
+.message_basket{
+    width: 100%;
+    background-color: yellow;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+    margin-top: 1%;
+}
+.korzina{
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.row_in_korzina{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.cell_in_korzina{
+    width: calc(100% /6);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 3px solid black;
+    font-size: 30px;
+}
+.cell_in_korzina> img{
+    width: 100%;
+}
+.last_cell_in_row{
+    width: calc(100% /6);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    border-bottom: 3px solid black;
+    font-size: 30px;
+}
+.row_after_busket{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.clear_busket{
+    width: 25%;
+    height: 5%;
+    font-size: 25px;
+    margin-top: 1%;
+}
+.cheque{
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    margin-top: 1%;
+    background-color: skyblue;
+    border: 3px solid black;
+}
+.button_order{
+    font-size: 25px;
+    width: 90%;
+    margin-bottom: 2%;
+}
+/*Кнопка удаления*/
+.cl-btn-7 {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    position: relative;
+    z-index: 1;
+    margin: 20px auto;
+    cursor: pointer;
+}
+.cl-btn-7:before {
+    content: '+';
+    color: #337AB7;
+    position: absolute;
+    z-index: 2;
+    transform: rotate(45deg);
+    font-size: 50px;
+    line-height: 1;
+    top: -5px;
+    left: 6px;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+}
+.cl-btn-7:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background: #337AB7;
+    z-index: 1;
+    transition: all 0.3s cubic-bezier(0.77, 0, 0.2, 0.85);
+    transform: scale(0.01);
+}
+.cl-btn-7:hover:after {
+    transform: scale(1);
+}
+.cl-btn-7:hover:before {
+    transform: scale(0.8) rotate(45deg);
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Рассылка*/
+.block_message{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 1%;
+    background-color: steelblue;
+}
+.message{
+    width: 98px;
+    height: 98px;
+    background: url(images/message.png);
+}
+.message:hover{
+    background: url(images/messageAfter.png);
+}
+input[type="email"]
+{
+    margin-top: 1%;
+    margin-bottom: 1%;
+    width: 75%;
+    height: 30px;
+}
+.send_email{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    background-color: blue;
+    border-color: black;
+    width: 100%;
+    font-size: 25px;
+}
+.send_email:hover{
+    background-color: red;
+}
+/*Ссылки в конце*/
+.info{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.column{
+    width: 100%;
+    text-align: center;
+    border-left: 3px solid black;
+
+}
+.column_right{
+    width: 100%;
+    text-align: center;
+    border-right: 3px solid black;
+    border-left: 3px solid black;
+
+}
+.column > a{
+    font-size: 25px;
+}
+.column > a:visited{
+    color: black;
+    text-decoration: none;
+}
+.column> a:active{
+    color: black;
+    text-decoration: none;
+}
+.column_right > a{
+    font-size: 25px;
+}
+.column_right> a:visited{
+    color: black;
+    text-decoration: none;
+}
+.column_right> a:active{
+    color: black;
+    text-decoration: none;
+}
+
+/*footer*/
+.footer{
+    width: 100%;
+    background-color: darkgrey;
+    font-size: 25px;
+    text-align: center;
+}
+.vk{
+    margin: 0 auto;
+    background: url("images/vk.png");
+    height: 100px;
+    width: 100px;
+}
+.vk:hover
+{
+    background: url("images/vk_after.png");
+}
+/*footer*/
+/*media*/
+@media screen and (min-width: 320px) and (max-width: 767px)
+{
+    .header{
+        flex-direction: column;
+    }
+    .logo{
+        text-align: center;
+    }
+
+    .button_poiks{
+        width: 15%;
+    }
+    .button_basket{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .button_My_Account{
+        width: 50%;
+        margin-bottom: 3%;
+    }
+    .menu{
+        width: 100%;
+    }
+    .nav-menu{
+        flex-direction: column;
+        text-align: center;
+        width:100%
+    }
+    .nav-menu >a{
+        display: inline-block;
+        padding: 10px;
+    }
+    .message_basket{
+        font-size: 25px;
+    }
+    .row_in_korzina{
+        display: none;
+    }
+    .korzina{
+        flex-direction: column;
+    }
+    .cell_in_korzina{
+        width: 100%;
+    }
+    .last_cell_in_row{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .row_after_busket{
+        flex-direction: column;
+    }
+    .clear_busket{
+        width: 100%;
+    }
+    .cheque{
+        width: 100%;
+    }
+
+
+
+
+
+
+
+    .block_message
+    {
+        width: 75%;
+    }
+    .info{
+        flex-direction: column;
+    }
+    .column{
+        border:0;
+        border-bottom: 3px solid black;
+    }
+    .column_right{
+        border:0;
+        border-bottom: 3px solid black;
+    }
+    .column > a{
+        text-decoration: none;
+        display:inline-block;
+        padding:10px;
+    }
+    .column_right >a{
+        text-decoration: none;
+        display:inline-block;
+        padding:10px;
+    }
+
+}
+@media screen and (min-width: 768px) and (max-width: 1280px) and (orientation: portrait){
+    h3{
+        font-size: 50px;
+    }
+    .header{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .search{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .button_poiks{
+        width: 15%;
+    }
+    .button_basket{
+        margin-top: 3%;
+        margin-bottom: 3%;
+    }
+    .button_My_Account{
+        width: 50%;
+        margin-bottom: 3%;
+        font-size: 25px;
+    }
+
+    .nav-menu{
+        flex-direction: column;
+        text-align: center;
+        width:100%
+    }
+    .nav-menu >a{
+        display: inline-block;
+        padding: 10px;
+    }
+    .column > a{
+        text-decoration: none;
+        display:inline-block;
+        padding:10px;
+    }
+    .column_right >a{
+        text-decoration: none;
+        display:inline-block;
+        padding:10px;
+    }
+}
+@media screen and (min-width: 1000px) and (max-width: 1280px) and (orientation: landscape)
+{
+    .button_My_Account{
+        width: 50%;
+        font-size: 25px;
+    }
+    .nav-menu{
+        flex-direction: column;
+        text-align: center;
+        width:100%
+    }
+    .nav-menu >a{
+        display: inline-block;
+        padding: 10px;
+    }
+    .column > a{
+        text-decoration: none;
+        display:inline-block;
+        padding:10px;
+    }
+    .column_right >a{
+        text-decoration: none;
+        display:inline-block;
+        padding:10px;
+    }
+}
